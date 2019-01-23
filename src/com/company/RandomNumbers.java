@@ -17,13 +17,13 @@ public class RandomNumbers {
         int n = keyboard.nextInt();
 
         for (int i = 0; i < 5; i++) {
-            int num = bound(n);
+            int num = getRandomNumber(n);
             System.out.print(num + ", ");
         }
     }
 
-    public static int bound(int b) {
-        int randomNum = 1 + (int) (Math.random() * b);
+    public static int getRandomNumber(int max) {
+        int randomNum = 1 + (int) (Math.random() * max);
         return randomNum;
     }
 }
