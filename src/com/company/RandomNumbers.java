@@ -12,7 +12,6 @@ public class RandomNumbers {
 
     public static void promptUser() {
         Scanner keyboard = new Scanner(System.in);
-
         System.out.print("Enter highest number : ");
         int n = keyboard.nextInt();
 
