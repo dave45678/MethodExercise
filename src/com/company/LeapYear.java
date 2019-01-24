@@ -17,14 +17,18 @@ public class LeapYear {
         System.out.print("Enter Year : ");
         int year = keyboard.nextInt();
 
-        checkYear(year);
-    }
-
-    public static void checkYear(int year){
-        if(year%4 == 0){
+        if(isLeapYear(year)){
             System.out.println("Leap Year");
         } else {
             System.out.println("Not a Leap Year!!!");
+        }
+    }
+
+    public static boolean isLeapYear(int year){
+        if(year%4 == 0){
+            return true;
+        } else {
+            return false;
         }
     }
 }

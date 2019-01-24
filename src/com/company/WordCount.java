@@ -15,11 +15,11 @@ public class WordCount {
         System.out.print("Enter String : ");
         String str = keyboard.nextLine();
 
-        int words = wordCount(str);
+        int words = getWordCount(str);
         System.out.println(words);
     }
 
-    public static int wordCount(String str) {
+    public static int getWordCount(String str) {
         System.out.println(str);
         int count = 0;
         for (String word : str.split(" ")) {

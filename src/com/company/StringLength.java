@@ -15,11 +15,11 @@ public class StringLength {
         System.out.print("Enter String: ");
         String str = keyboard.nextLine();
 
-        int length = lengthOfString(str);
+        int length = getLength(str);
         System.out.println(length);
     }
 
-    public static int lengthOfString(String str){
+    public static int getLength(String str){
         return str.length();
     }
 }

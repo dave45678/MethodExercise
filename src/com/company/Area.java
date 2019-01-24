@@ -20,11 +20,11 @@ public class Area {
         System.out.print("Enter number 2: ");
         int num2 = keyboard.nextInt();
 
-        int area = calculateArea(num1, num2);
+        int area = getArea(num1, num2);
         System.out.println(area);
     }
 
-    public static int calculateArea(int length, int breadth){
+    public static int getArea(int length, int breadth){
         int area = 0;
         area = length * breadth;
         return area;
