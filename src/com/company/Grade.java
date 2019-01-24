@@ -18,23 +18,20 @@ public class Grade {
 
     public static void promptUser() {
         Scanner keyboard = new Scanner(System.in);
-        System.out.print("Enter total : ");
+        System.out.print("Enter total number: ");
         int n = keyboard.nextInt();
 
         System.out.print("Enter marks obtained : ");
         int m = keyboard.nextInt();
 
         char grade = getGrade(m, n);
-        System.out.print(grade);
-        System.out.printf("Student  Test Score %d and Grade %s"
-                , n, grade);
+        System.out.printf("Student  Test Score %d out of %d and Grade is %s", m, n, grade);
 
     }
 
     public static char getGrade(int marks, int total) {
         char grade;
         double percent = marks * 100 / total;
-
         if ((percent >= 90) & (percent <= 100)) {
             grade = 'A';
         } else if ((percent >= 80) & (percent <= 89)) {
