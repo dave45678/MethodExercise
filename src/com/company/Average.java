@@ -30,5 +30,4 @@ public class Average {
         double average = (num1+num2+num3)/3;
         return average;
     }
-
 }

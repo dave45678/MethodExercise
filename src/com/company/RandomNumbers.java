@@ -15,9 +15,10 @@ public class RandomNumbers {
         System.out.print("Enter highest number : ");
         int n = keyboard.nextInt();
 
+        System.out.print("The numbers are ");
         for (int i = 0; i < 5; i++) {
             int num = getRandomNumber(n);
-            System.out.print(num + ", ");
+            System.out.print( num + ", ");
         }
     }
 
