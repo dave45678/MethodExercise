@@ -12,17 +12,21 @@ public class EvenOrOdd {
     public static void promptUser(){
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("Enter number : ");
+        System.out.print("Enter number : ");
         int num1 = keyboard.nextInt();
 
-        check(num1);
+        if (isEven(num1)){
+            System.out.println(num1 +" is an Even Number");
+        } else{
+            System.out.println(num1 + " is an Odd Number");
+        }
     }
 
-    public static void check(int num1){
+    public static boolean isEven(int num1){
         if(num1%2==0){
-            System.out.println(num1 +" is an Even Number");
+            return true;
         } else {
-            System.out.println(num1 + " is an Odd Number");
+            return false;
         }
     }
 }
